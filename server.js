@@ -4,7 +4,7 @@ const app = express();
 
 
 
-app.use(function (req, res, next) {
+app.use('/store', function (req, res, next) {
     console.log('Hej, jestem pośrednikiem przy żądaniu do .store!');
     next();
 });
